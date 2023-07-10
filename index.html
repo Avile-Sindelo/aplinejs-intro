@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpineJS intro</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <div x-data="{counter: 0}">
+        <div x-text="counter"></div>
+            <div>
+                <button x-on:click="counter++"> Increment</button>
+                <button x-on:click="counter > 0 ? counter-- : counter = 0"> Decrement</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
